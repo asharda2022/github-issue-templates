@@ -1,0 +1,108 @@
+name: OS Roadmap Intake Form
+description: This form will be used to record/intake and track new work for Shopify OS
+title: "Enter TLDR Here"
+labels: [roadmap]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## How to use the form:
+        This form is to be used to capture any current/future roadmap work for Shopify OS. Please complete the following steps:
+        1. Enter a title for your work request in the title field above.
+        2. Fill out all fields in the form.
+        3. Assign yourself and the project champion (if that person is not you) in the right hand menu.
+  - type: input
+    id: work_type
+    attributes:
+      label: What type of work are you proposing?
+      description: Writea. description of the work
+      placeholder: Enter work type here
+    validations:
+      required: true
+  - type: input
+    id: requester
+    attributes:
+      label: Who is requesting the work? 
+      description: Name of individual or team requesting the work. 
+      placeholder: Name of requester
+    validations:
+      required: true
+  - type: input
+    id: champion
+    attributes:
+      label: Who is the champion of this work?
+      description: Primary person leading the work. 
+      placeholder: Name of champion
+    validations:
+      required: true
+  - type: input
+    id: briefdoc
+    attributes:
+      label: Provide link to the Project Brief
+      description: Link of the document describing the project brief
+      placeholder: Project Brief
+    validations:
+      required: true 
+  - type: dropdown
+    id: impact
+    attributes:
+      label: What is the impact of this work?
+      description: Low = Good to have. Medium = Improves OS overall. High = Mission critical.  
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+  - type: date
+    id: start_date
+    attributes:
+      label: What is the start date
+      description:
+    validations:
+      required: true
+  - type: date
+    id: target_date
+    attributes:
+      label: What is the target delivery date
+      description:
+    validations:
+      required: true
+  - type: dropdown
+    id: effortsize
+    attributes:
+      label: What's the effort size?
+      description: Small = 2 week sprint. Medium = 3-6 week release. Large = Over 6 weeks, multiple releases.  
+      options:
+        - Small
+        - Medium
+        - Large
+    validations:
+      required: true
+ - type: dropdown
+    id: workstream
+    attributes:
+      label: What workstream does this work belong to?
+      description: Small = 2 week sprint. Medium = 3-6 week release. Large = Over 6 weeks, multiple releases.  
+      options:
+        - Shopify Model 
+        - Compensation Frameworks
+        - Talent Portability
+        - Developer Experience
+        - the Book
+    validations:
+      required: true
+ - type: dropdown
+    id: proposedquarter
+    attributes:
+      label: What is the proposed quarter for this work?
+      description:   
+      options:
+        - FY2023 Q1 
+        - FY2023 Q2
+        - FY2023 Q3
+        - FY2023 Q4
+        - FY2024 Q1
+    validations:
+      required: true
